@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Interactif</h1>
+        <div id="quiz-section">
+            <p>Testez vos connaissances avec ce quiz!</p>
+            <button onclick="lancerQuiz()">Démarrer le Quiz</button>
+        </div>
+        <div id="question-container" style="display: none;">
+            <p id="question-text"></p>
+            <input type="text" id="reponse-input" placeholder="Votre réponse">
+            <button id="submit-btn">Valider</button>
+        </div>
+        <div id="feedback" style="margin-top: 20px;"></div>
+        <div id="resultat" style="margin-top: 20px; font-weight: bold;"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html> 
